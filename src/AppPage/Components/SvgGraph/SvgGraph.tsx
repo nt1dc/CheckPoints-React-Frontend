@@ -1,5 +1,4 @@
 import React from 'react';
-import {IPoint} from "../../types/types";
 
 const SvgGraph = () => {
     return (
