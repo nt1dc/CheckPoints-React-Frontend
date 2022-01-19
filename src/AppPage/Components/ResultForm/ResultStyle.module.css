@@ -1,0 +1,30 @@
+* {
+    text-align: center;
+}
+
+
+a {
+    color: #74bbad;
+    text-decoration: none
+}
+
+.radio label {
+    display: inline-block;
+    padding: 10px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+}
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio input[type="radio"]:checked + label {
+    border: solid 2px green;
+    background-image: linear-gradient(180deg, #95d891, #74bbad);
+    color: #fff;
+    box-shadow: 0 1px 1px #0000002e;
+    text-shadow: 0 1px 0 #79485f7a;
+}
+
+
