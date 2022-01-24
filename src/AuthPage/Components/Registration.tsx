@@ -5,12 +5,19 @@ import auth from "../../API/authAPI";
 
 const Registration = () => {
 
+
+    let [error, setError] = React.useState('zxc');
     const [username, setUsername] = React.useState('');
     const [password, setPassword] = React.useState('');
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        auth.register(username, password);
+        // @ts-ignore
+        auth.register(username, password,updateError);
     };
+    // @ts-ignore
+    let updateError = (value) => {
+        setError(value)
+    }
     return (
         <div>
             <div>
@@ -31,6 +38,7 @@ const Registration = () => {
                     <button type={"submit"}> reg</button>
                 </div>
             </form>
+            <h1>{error}</h1>
         </div>
     )
 }
