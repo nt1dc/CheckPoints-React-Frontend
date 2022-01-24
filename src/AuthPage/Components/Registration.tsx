@@ -1,5 +1,5 @@
 import React from "react";
-import s from "../../AppPage/Components/ResultForm/ResultStyle.module.css";
+import s from "../../AppPage/ResultForm/ResultStyle.module.css";
 import {NavLink} from "react-router-dom";
 import auth from "../../API/authAPI";
 

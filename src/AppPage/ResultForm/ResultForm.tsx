@@ -2,7 +2,7 @@ import React, {MouseEventHandler, useEffect, useRef, useState} from 'react';
 import s from "./ResultStyle.module.css";
 // import {entryAPI, getentr} from "../../../API/entryAPI";
 import {log} from "util";
-import authAPI from "../../../API/authAPI";
+import authAPI from "../../API/authAPI";
 import {NavLink} from "react-router-dom";
 import axios from "axios";
 import {json} from "stream/consumers";
